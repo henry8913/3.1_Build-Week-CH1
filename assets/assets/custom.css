@@ -12,7 +12,7 @@
 .property-images {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 0.3rem;
+            gap: ;
         }
         .property-images img {
             height: 150px;
