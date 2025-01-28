@@ -23,85 +23,53 @@
           </div>
       </header>
   
-      <main class="container mt-4">
-          <section class="row">
-              <div class="d-flex col-12 col-md-10">
-                  <div class="mb-3">
-                      <img src="assets/assets/1.webp" class="img-fluid rounded" alt="Main property image">
-                  </div>
-                  <div class=" property-images  gap-2 col-6 col-md-2">
-                      <img src="assets/assets/2.webp" class="img-thumbnail" alt="Image 1">
-                      <img src="assets/assets/3.webp" class="img-thumbnail" alt="Image 2">
-                  </div>
-                  <div class=" property-images  gap-2 col-6 col-md-2">
-                      <img src="assets/assets/4.webp" class="img-thumbnail" alt="Image 3">
-                      <img src="assets/assets/5.webp" class="img-thumbnail" alt="Image 4">
-                  </div>
-                  </div>
-              </div>
-              </section>
-              <section class="row">
-              <div class="col-lg-3">
-                  <div class="border rounded p-3 shadow">
-                      <h2 class="h6">Add dates to see the prices</h2>
-                      <form>
-                          <div class="mb-3">
-                              <label for="check-in" class="form-label">Check-in</label>
-                              <input type="date" id="check-in" class="form-control">
-                          </div>
-                          <div class="mb-3">
-                              <label for="check-out" class="form-label">Check-out</label>
-                              <input type="date" id="check-out" class="form-control">
-                          </div>
-                          <div class="mb-3">
-                              <label for="guests" class="form-label">Guests</label>
-                              <input type="number" id="guests" class="form-control" placeholder="Number of guests">
-                          </div>
-                          <button type="button" class="btn btn-danger w-100">Cancel Booking</button>
-                      </form>
-                  </div>
-              </div>
-          </section>
 
 
-          <main class="container mt-4">
+                <main class="container mt-4">
+                    <section class="row">
+                        <!-- Immagine grande a sinistra -->
+                        <div class="col-12 col-md-8">
+                            <div class="mb-3">
+                                <img src="assets/assets/1.webp" class="img-fluid rounded w-100" alt="Main property image">
+                            </div>
+                        </div>
+                
+                        <!-- Immagini più piccole a destra -->
+                        <div class="col-12 col-md-4 d-flex flex-column justify-content-around">
+                            <div class="property-images d-flex mb-2">
+                                <img src="assets/assets/2.webp" class="img-fluid rounded me-2" alt="Image 1">
+                                <img src="assets/assets/3.webp" class="img-fluid rounded" alt="Image 2">
+                            </div>
+                            <div class=" property-images d-flex">
+                                <img src="assets/assets/4.webp" class="img-fluid rounded me-2" alt="Image 3">
+                                <img src="assets/assets/5.webp" class="img-fluid rounded" alt="Image 4">
+                            </div>
+                        </div>
+                    </section>
+                
+                    <div class="col-12 col-md-4 d-flex  mt-4">
+                        <div class="border rounded p-3 shadow">
+                            <h2 class="h6">Add dates to see the prices</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="check-in" class="form-label">Check-in</label>
+                                    <input type="date" id="check-in" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="check-out" class="form-label">Check-out</label>
+                                    <input type="date" id="check-out" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="guests" class="form-label">Guests</label>
+                                    <input type="number" id="guests" class="form-control" placeholder="Number of guests">
+                                </div>
+                                <button type="button" class="btn btn-danger w-100">Cancel Booking</button>
+                            </form>
+                        </div>
+                    </div>
+               
             <section class="row">
-                <div class="d-flex col-12 col-md-8">
-                    <div class="mb-3">
-                        <img src="assets/assets/1.webp" class="img-fluid rounded" alt="Main property image">
-                    </div>
-                    <div class="property-images col-6 col-md-4">
-                        <img src="assets/assets/2.webp" alt="Image 1">
-                        <img src="assets/assets/3.webp" alt="Image 2">
-                        <img src="assets/assets/4.webp" alt="Image 3">
-                        <img src="assets/assets/5.webp" alt="Image 4">
-                    </div>
-                </div>
-            </section>
-                <div class="col-lg-4">
-                    <div class="border rounded p-3 shadow">
-                        <h2 class="h6">Add dates to see the prices</h2>
-                        <form>
-                            <div class="mb-3">
-                                <label for="check-in" class="form-label">Check-in</label>
-                                <input type="date" id="check-in" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label for="check-out" class="form-label">Check-out</label>
-                                <input type="date" id="check-out" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label for="guests" class="form-label">Guests</label>
-                                <input type="number" id="guests" class="form-control" placeholder="Number of guests">
-                            </div>
-                            <button type="button" class="btn btn-danger w-100">Cancel Booking</button>
-                        </form>
-                    </div>
-                </div>
-            
-
-  
-          <section class="mt-4">
+          <div class="col-12 col-md-8 mt-4">
               <h2 class="h5">House - Host: Erica</h2>
               <p>3 rooms: Perfect place to visit the Loch Ness and go looking for Nessie.</p>
               <ul class="list-unstyled">
@@ -111,9 +79,9 @@
                   <li class="mb-2"><strong>Cancellation Terms and Fees:</strong> Add your travel dates to know details about cancellation fees and terms.</li>
                   <li class="mb-2"><strong>Rules of the House:</strong> It's forbidden to host parties, bring animals, and smoke.</li>
               </ul>
-          </section>
+            </div>
   
-          <section class="mt-4">
+          <div class="  mt-4">
               <h3 class="h5">Reviews</h3>
               <div class="review border rounded p-3">
                   <p><strong>Noemi - Jan 2021:</strong> Contrary to other reviews, I was cold and couldn't figure out how to turn on the heating. Otherwise, an amazing house.</p>
@@ -121,9 +89,9 @@
               <div class="review border rounded p-3">
                   <p><strong>Enrico - Jan 2021:</strong> Amazing place. I've been here with my daughter to take pictures, and we were not disappointed!</p>
               </div>
-          </section>
+            </div>
   
-          <section class="mt-4">
+          <div class="mt-4">
               <h3 class="h5">Leave a Review</h3>
               <form>
                   <div class="mb-3">
@@ -143,11 +111,14 @@
                   <div class="mb-3">
                       <label for="review" class="form-label">Review</label>
                       <textarea id="review" rows="3" class="form-control"></textarea>
-                  </div>
+                  </div> 
+                  
                   <button type="submit" class="btn btn-primary">Submit Review</button>
               </form>
-          </section>
+            </div>
+            </section>
       </main>
+      
   
    
 
