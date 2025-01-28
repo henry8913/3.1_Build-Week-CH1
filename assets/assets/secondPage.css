@@ -1,0 +1,19 @@
+.card img {
+    border-radius: 15px;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.plus {
+    background-color: #E61D57;
+}
+
+.card p {
+    margin: 0;
+}
