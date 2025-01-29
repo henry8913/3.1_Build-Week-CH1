@@ -43,41 +43,42 @@
             </div>
         </nav>
 
-        <div class="search-container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12 px-3 py-2 border-end">
-                    <label class="text-muted small">Location</label>
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-geo-alt icon"></i>
-                        <input type="text" class="bg-transparent" placeholder="Where are you going?">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6 px-3 py-2 border-end">
-                    <label class="text-muted small">Check-in</label>
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-calendar icon"></i>
-                        <input type="text" class="bg-transparent" placeholder="gg/mm/aaaa">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6 px-3 py-2 border-end">
-                    <label class="text-muted small">Check-out</label>
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-calendar icon"></i>
-                        <input type="text" class="bg-transparent" placeholder="gg/mm/aaaa">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 px-3 py-2">
-                    <label class="text-muted small">Guests</label>
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-person icon"></i>
-                        <input type="text" class="bg-transparent" placeholder="Add guests">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 d-flex justify-content-center">
-                    <button class="search-btn"><i class="bi bi-search"></i></button>
-                </div>
+<!-- Barra di Ricerca -->
+<div class="search-container">
+    <div class="row gx-2">
+        <div class="col col-location px-3 py-2 border-end">
+            <label class="text-muted small d-block">Location</label>
+            <div class="d-flex align-items-center">
+                <i class="bi bi-geo-alt icon me-2"></i>
+                <input type="text" class="bg-transparent" placeholder="Where are you going?">
             </div>
         </div>
+        <div class="col col-date px-3 py-2 border-end">
+            <label class="text-muted small d-block">Check-in</label>
+            <div class="d-flex align-items-center">
+                <i class="bi bi-calendar icon me-2"></i>
+                <input type="text" class="bg-transparent" placeholder="gg/mm/aaaa">
+            </div>
+        </div>
+        <div class="col col-date px-3 py-2 border-end">
+            <label class="text-muted small d-block">Check-out</label>
+            <div class="d-flex align-items-center">
+                <i class="bi bi-calendar icon me-2"></i>
+                <input type="text" class="bg-transparent" placeholder="gg/mm/aaaa">
+            </div>
+        </div>
+        <div class="col col-guests px-3 py-2 border-end">
+            <label class="text-muted small d-block">Guests</label>
+            <div class="d-flex align-items-center">
+                <i class="bi bi-person icon ms-2"></i>
+                <input type="text" class="bg-transparent" placeholder="Add guests">
+            </div>
+        </div>
+        <div class="col col-btn">
+            <button class="search-btn"><i class="bi bi-search"></i></button>
+        </div>
+    </div>
+</div>
 
         <section class="hero">
             <div class="hero-overlay"></div>
