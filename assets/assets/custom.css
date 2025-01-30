@@ -12,7 +12,7 @@
 .property-images {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: ;
+            
         }
         .property-images img {
             height: 150px;
@@ -27,3 +27,41 @@
         .review {
             margin-bottom: 1.5rem;
         }
+        header{
+            background-color: black;
+        }
+        .bg-body-tertiary {
+            background-color: black !important;
+            width: 100%;
+        }
+        .navbar  {
+            color: white;
+        }
+        .navbar-toggler{
+            color: white;
+            font-size: medium;
+        }
+        div.container-fluid{
+            display: flex;
+            justify-content: center;
+        }
+        .me-auto{
+            display: flex;
+            flex-direction: row;
+        }
+        .d-flex{
+            width: 100%;
+        }
+        li{
+            display: flex;
+            
+            margin: 0;
+            
+            flex-direction: column;
+        }
+        img.img-hero{
+            width: 55rem;
+            
+            
+        }
+
