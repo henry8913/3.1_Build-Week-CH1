@@ -55,7 +55,6 @@ Il progetto segue le best practices di Web Design, garantendo accessibilità, us
  ├── 📂 scss/           # File sorgenti SCSS
  ├── 📂 css/            # File CSS generato automaticamente
  ├── 📂 js/             # Script JavaScript
- ├── 📂 pages/          # Pagine aggiuntive (Genova, Listing, etc.)
  └── index.html         # Pagina principale
 ```
 
