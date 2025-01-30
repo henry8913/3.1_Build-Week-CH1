@@ -392,113 +392,141 @@ $shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
 @media (max-width: 728px) {
 
-    // Mobile Menu
-    .desktop-header {
-        display: none;
+ // Navbar Mobile
+.desktop-header {
+    display: none;
+}
+
+.mobile-header {
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 12px 20px;
+    box-shadow: none;
+    width: 100%;
+    z-index: 1000;
+
+    .navbar-brand img {
+        height: 35px;
     }
+}
 
-    .mobile-header {
-        display: block;
-    }
+// Stile "Become a host" e icona globo
+.become-host, .globe-icon {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: $text-color;
+    transition: color 0.3s ease;
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.9);
-        padding: 12px 20px;
-
-        .navbar-brand img {
-            height: 35px;
-        }
-    }
-
-    .hamburger-menu {
-        display: block;
-        font-size: 2rem;
-        color: $text-color;
-        cursor: pointer;
-    }
-
-    .mobile-menu {
-        position: fixed;
-        top: 0;
-        left: -280px;
-        width: 280px;
-        height: 100%;
-        background: darken($text-color, 10%);
-        box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
-        transition: left 0.4s ease-in-out;
-        padding: 25px;
-        z-index: 1001;
-        border-radius: 0 15px 15px 0;
-
-        &.show {
-            left: 0;
-        }
-
-        a {
-            display: block;
-            font-size: 1.3rem;
-            padding: 14px 0;
-            color: $black;
-            font-weight: bold;
-
-            &:hover {
-                color: $primary-color;
-                transform: translateX(5px);
-                transition: 0.2s;
-            }
-        }
-
-        hr {
-            margin: 12px 0;
-            border: 1px solid #ccc;
-        }
-    }
-
-    .close-menu {
-        background: none;
-        border: none;
-        font-size: 2.2rem;
-        cursor: pointer;
-        display: block;
-        text-align: right;
-        width: 100%;
+    &:hover {
         color: $primary-color;
     }
+}
 
-    .search-container {
-        flex-direction: column;
-        width: 90%;
-        padding: 14px;
-        border-radius: 20px;
-        box-shadow: none;
-        background: $text-color;
-        margin-top: 4vh;
+.globe-icon {
+    font-size: 1.2rem;
+}
 
-        .row {
-            flex-direction: column;
-        }
+// Icona menu hamburger
+.hamburger-menu {
+    font-size: 2rem;
+    color: $text-color;
+    cursor: pointer;
+    transition: color 0.3s ease;
 
-        .col {
-            width: 100%;
-            border-right: none;
-            margin-bottom: 10px;
-        }
+    &:hover {
+        color: $primary-color;
+    }
+}
 
-        .col-btn {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
+// Mobile Menu
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+    transition: left 0.4s ease-in-out;
+    padding: 25px;
+    z-index: 1001;
+    border-radius: 0 15px 15px 0;
 
-        .search-btn {
-            width: 100%;
-            border-radius: 10px;
-            padding: 12px;
+    &.show {
+        left: 0;
+    }
+
+    a {
+        display: block;
+        font-size: 1.3rem;
+        padding: 14px 0;
+        color: $text-color;
+        font-weight: bold;
+        transition: transform 0.2s ease, color 0.2s ease;
+
+        &:hover {
+            color: $primary-color;
+            transform: translateX(5px);
         }
     }
+
+    hr {
+        margin: 12px 0;
+        border: 1px solid #ccc;
+    }
+}
+
+// Bottone di chiusura menu
+.close-menu {
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    width: 100%;
+    color: $primary-color;
+}
+
+// Aggiustamenti per la Search Container su Mobile
+.search-container {
+    flex-direction: column;
+    width: 70%;
+    padding: 14px;
+    border-radius: 20px;
+    box-shadow: none;
+    background: $text-color;
+    margin-top: 4vh;
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        border-right: none;
+        margin-bottom: 10px;
+    }
+
+    .col-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-btn {
+        width: 100%;
+        border-radius: 10px;
+        padding: 12px;
+    }
+}
 
     .hero {
         height: 100vh;
@@ -506,6 +534,7 @@ $shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         justify-content: center;
         text-align: center;
         padding: 20px;
+        object-fit: cover;
 
         &-content {
             margin: 0 auto;

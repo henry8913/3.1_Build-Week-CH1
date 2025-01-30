@@ -338,17 +338,36 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.9);
+    background: transparent;
     padding: 12px 20px;
+    box-shadow: none;
+    width: 100%;
+    z-index: 1000;
   }
   .navbar .navbar-brand img {
     height: 35px;
   }
+  .become-host, .globe-icon {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  .become-host:hover, .globe-icon:hover {
+    color: #ff385c;
+  }
+  .globe-icon {
+    font-size: 1.2rem;
+  }
   .hamburger-menu {
-    display: block;
     font-size: 2rem;
     color: white;
     cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  .hamburger-menu:hover {
+    color: #ff385c;
   }
   .mobile-menu {
     position: fixed;
@@ -356,7 +375,7 @@
     left: -280px;
     width: 280px;
     height: 100%;
-    background: rgb(229.5, 229.5, 229.5);
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
     transition: left 0.4s ease-in-out;
     padding: 25px;
@@ -370,13 +389,13 @@
     display: block;
     font-size: 1.3rem;
     padding: 14px 0;
-    color: black;
+    color: white;
     font-weight: bold;
+    transition: transform 0.2s ease, color 0.2s ease;
   }
   .mobile-menu a:hover {
     color: #ff385c;
     transform: translateX(5px);
-    transition: 0.2s;
   }
   .mobile-menu hr {
     margin: 12px 0;
@@ -394,7 +413,7 @@
   }
   .search-container {
     flex-direction: column;
-    width: 90%;
+    width: 70%;
     padding: 14px;
     border-radius: 20px;
     box-shadow: none;
@@ -425,6 +444,7 @@
     justify-content: center;
     text-align: center;
     padding: 20px;
+    object-fit: cover;
   }
   .hero-content {
     margin: 0 auto;

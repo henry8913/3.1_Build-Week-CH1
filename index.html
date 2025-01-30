@@ -42,29 +42,36 @@
             </nav>
         </header>
 
-        <!-- HEADER MOBILE (<728px) -->
-        <header class="mobile-header">
-            <nav class="navbar fixed-top">
-                <div class="container">
-                    <a class="navbar-brand fw-bold" href="index.html">
-                        <img src="assets/img/logo.png" alt="Airbnb Logo" height="30">
+    <!-- HEADER MOBILE (<728px) -->
+    <header class="mobile-header">
+        <nav class="navbar fixed-top shadow-sm">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo-pink.png" alt="Airbnb Logo" class="logo">
+                </a>    
+                <div class="d-flex align-items-center">
+                    <a href="#" class="me-3 become-host">Become a host</a>
+                    <a href="#" class="me-3 globe-icon">
+                        <i class="bi bi-globe"></i>
                     </a>
                     <div class="hamburger-menu" onclick="toggleMenu()">
                         <i class="bi bi-list"></i>
                     </div>
                 </div>
-            </nav>
-            <div class="mobile-menu" id="mobileMenu">
-                <button class="close-menu" onclick="toggleMenu()">&times;</button>
-                <a href="#">Places to stay</a>
-                <a href="#">Experiences</a>
-                <a href="#">Online Experiences</a>
-                <hr>
-                <a href="#">Become a host</a>
-                <a href="#"><i class="bi bi-globe"></i> Language</a>
-                <a href="#"><i class="bi bi-person-circle"></i> Profile</a>
             </div>
-        </header>
+        </nav>
+    
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-menu" onclick="toggleMenu()">&times;</button>
+            <a href="#">Places to stay</a>
+            <a href="#">Experiences</a>
+            <a href="#">Online Experiences</a>
+            <hr>
+            <a href="#">Become a host</a>
+            <a href="#"><i class="bi bi-globe"></i> Language</a>
+            <a href="#"><i class="bi bi-person-circle"></i> Profile</a>
+        </div>
+    </header>    
 
         <main>
             <div class="search-container">
