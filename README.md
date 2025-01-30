@@ -5,7 +5,7 @@
 Il **Airbnb Clone** è un progetto sviluppato per replicare l'interfaccia e l'esperienza utente del popolare servizio di prenotazioni online. È stato realizzato utilizzando moderne tecnologie di sviluppo web, garantendo un design responsivo e accattivante.
 
 <p align="center">
-    <img src="" alt="Cover" width="100%" />
+    <img src="https://github.com/henry8913/3.1_Build-Week-CH1/blob/main/assets/img/cover_a.jpg" alt="Cover" width="100%" />
 </p>
 
 ---
