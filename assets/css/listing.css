@@ -1,12 +1,6 @@
 
-
-
-        .property-images img {
-            max-height: 200px;
-            object-fit: cover;
-            width: 100%;
-            border-radius: 0.5rem;
-           
+        .img-fluid {
+            border-radius: 0.5rem; 
         }
         .rules-list li {
             margin-bottom: 0.5rem;
@@ -14,4 +8,18 @@
         .review {
             margin-bottom: 1.5rem;
         }
- 
+ .img-big{
+    height: 597px;
+    width: 550px;
+    object-fit: cover;
+ }
+
+ .img-small{
+    object-fit: cover;
+    height: 292px;
+    width: 250px;
+ }
+ .check-box{
+    height: 100px;
+    width: 350px;
+ }
