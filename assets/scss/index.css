@@ -392,6 +392,7 @@
     color: white;
     font-weight: bold;
     transition: transform 0.2s ease, color 0.2s ease;
+    text-decoration: none;
   }
   .mobile-menu a:hover {
     color: #ff385c;
