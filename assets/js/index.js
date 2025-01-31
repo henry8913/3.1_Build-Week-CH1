@@ -12,11 +12,11 @@ document.getElementById("menuIcon").addEventListener("click", function () {
 document.addEventListener("click", function (event) {
     var menuIcon = document.getElementById("menuIcon");
     var dropdown = document.getElementById("dropdownMenu");
+
     if (!menuIcon.contains(event.target) && !dropdown.contains(event.target)) {
         dropdown.style.display = "none";
     }
 });
-
 /* ___________________________________________________________________________________ SEARCH CONTAINER */
 function toggleGuestDropdown() {
     var dropdown = document.getElementById("guestsDropdown");
