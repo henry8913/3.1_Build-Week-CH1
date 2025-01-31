@@ -1,7 +1,6 @@
 .hero {
   position: relative;
   height: 100vh;
-  background: url("../img/home.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -326,6 +325,11 @@
   color: #ff385c;
 }
 
+@media (min-width: 728px) {
+  .hero {
+    background: url("../img/home.jpg") no-repeat center center/cover;
+  }
+}
 @media (max-width: 1024px) and (min-width: 728px) {
   .mobile-header {
     display: none;
@@ -505,6 +509,7 @@
     text-align: center;
     padding: 20px;
     object-fit: cover;
+    background-color: black;
   }
   .hero-content {
     margin: 0 auto;
