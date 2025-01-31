@@ -15,7 +15,6 @@ $shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 .hero {
     position: relative;
     height: 100vh;
-    background: url('../img/home.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -373,6 +372,12 @@ $shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 }
 
+@media (min-width:728px){
+.hero {
+background: url('../img/home.jpg') no-repeat center center/cover;
+}
+}
+
 // Media Queries
 @media (max-width: 1024px) and (min-width: 728px) {
     .mobile-header {
@@ -595,6 +600,7 @@ $shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         text-align: center;
         padding: 20px;
         object-fit: cover;
+        background-color: $black;
 
         &-content {
             margin: 0 auto;
