@@ -13,6 +13,38 @@
         <link rel="icon" type="image/svg+xml" href="assets/img/favicon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+        <style>
+            .profile-menu {
+                position: relative;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+        
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 40px;
+                background: white;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+                z-index: 1000;
+            }
+        
+            .dropdown-menu a {
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #333;
+                transition: background 0.3s;
+            }
+        
+            .dropdown-menu a:hover {
+                background: #f7f7f7;
+            }
+        </style>
     </head>
 
     <body>
@@ -34,44 +66,49 @@
                         <a href="#" class="host">Become a host</a>
                         <i class="bi bi-globe icon"></i>
                         <div class="profile-menu">
-                            <i class="bi bi-list"></i>
+                            <i class="bi bi-list" id="menuIcon"></i>
                             <i class="bi bi-person-circle"></i>
+                            <div class="dropdown-menu" id="dropdownMenu">
+                                <a href="listing.html">Listings</a>
+                                <a href="genova.html">Genova</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
 
-    <!-- HEADER MOBILE (<728px) -->
-    <header class="mobile-header">
-        <nav class="navbar fixed-top shadow-sm">
-            <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo-pink.png" alt="Airbnb Logo" class="logo">
-                </a>    
-                <div class="d-flex align-items-center">
-                    <a href="#" class="me-3 become-host">Become a host</a>
-                    <a href="#" class="me-3 globe-icon">
-                        <i class="bi bi-globe"></i>
-                    </a>
-                    <div class="hamburger-menu" onclick="toggleMenu()">
-                        <i class="bi bi-list"></i>
+        <!-- HEADER MOBILE (<728px) -->
+        <header class="mobile-header">
+            <nav class="navbar fixed-top shadow-sm">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo-pink.png" alt="Airbnb Logo" class="logo">
+                    </a>    
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="me-3 become-host">Become a host</a>
+                        <a href="#" class="me-3 globe-icon">
+                            <i class="bi bi-globe"></i>
+                        </a>
+                        <div class="hamburger-menu" onclick="toggleMenu()">
+                            <i class="bi bi-list"></i>
+                        </div>
                     </div>
                 </div>
+            </nav>
+        
+            <div class="mobile-menu" id="mobileMenu">
+                <button class="close-menu" onclick="toggleMenu()">&times;</button>
+                <a href="#"><i class="bi bi-house-door"></i> Places to stay</a>
+                <a href="#"><i class="bi bi-people"></i> Experiences</a>
+                <a href="#"><i class="bi bi-camera-video"></i> Online Experiences</a>
+                <hr>
+                <a href="listing.html"><i class="bi bi-card-list"></i> Listings</a>
+                <a href="genova.html"><i class="bi bi-geo-alt"></i> Genova</a>
+                <hr>
+                <a href="#"><i class="bi bi-person-circle"></i> Profile</a>
             </div>
-        </nav>
-    
-        <div class="mobile-menu" id="mobileMenu">
-            <button class="close-menu" onclick="toggleMenu()">&times;</button>
-            <a href="#">Places to stay</a>
-            <a href="#">Experiences</a>
-            <a href="#">Online Experiences</a>
-            <hr>
-            <a href="#">Become a host</a>
-            <a href="#"><i class="bi bi-globe"></i> Language</a>
-            <a href="#"><i class="bi bi-person-circle"></i> Profile</a>
-        </div>
-    </header>    
+        </header>   
 
         <main>
             <div class="search-container">
@@ -181,72 +218,72 @@
                 </div>
             </section>
 
-        <section class="listing-section">
-            <div class="container">
-                <div class="filters">
-                    <span class="filter active"><i class="bi bi-image"></i> Vista mozzafiato</span>
-                    <span class="filter"><i class="bi bi-star"></i> Icone</span>
-                    <span class="filter"><i class="bi bi-emoji-smile"></i> Wow!</span>
-                    <span class="filter"><i class="bi bi-house-door"></i> Minicase</span>
-                    <span class="filter"><i class="bi bi-castle"></i> Castelli</span>
-                    <span class="filter"><i class="bi bi-tree"></i> Tropicali</span>
-                    <span class="filter"><i class="bi bi-snow"></i> Sulle piste</span>
-                    <span class="filter"><i class="bi bi-house"></i> Baite</span>
-                    <span class="filter"><i class="bi bi-tree-fill"></i> Case sull'albero</span>
-                    <span class="filter"><i class="bi bi-circle"></i> Cupole</span>
-                    <span class="filter"><i class="bi bi-house-heart"></i> Ville</span>
-                    <span class="filter"><i class="bi bi-tree"></i> Campagna</span>
-                    <button class="filter-btn"><i class="bi bi-funnel"></i> Filtri</button>
+            <section class="listing-section">
+                <div class="container">
+                    <div class="filters">
+                        <span class="filter active"><i class="bi bi-image"></i> Vista mozzafiato</span>
+                        <span class="filter"><i class="bi bi-star"></i> Icone</span>
+                        <span class="filter"><i class="bi bi-emoji-smile"></i> Wow!</span>
+                        <span class="filter"><i class="bi bi-house-door"></i> Minicase</span>
+                        <span class="filter"><i class="bi bi-castle"></i> Castelli</span>
+                        <span class="filter"><i class="bi bi-tree"></i> Tropicali</span>
+                        <span class="filter"><i class="bi bi-snow"></i> Sulle piste</span>
+                        <span class="filter"><i class="bi bi-house"></i> Baite</span>
+                        <span class="filter"><i class="bi bi-tree-fill"></i> Case sull'albero</span>
+                        <span class="filter"><i class="bi bi-circle"></i> Cupole</span>
+                        <span class="filter"><i class="bi bi-house-heart"></i> Ville</span>
+                        <span class="filter"><i class="bi bi-tree"></i> Campagna</span>
+                        <button class="filter-btn"><i class="bi bi-funnel"></i> Filtri</button>
+                    </div>
+            
+                    <div class="row listings py-4">
+                        <div class="col">
+                            <div class="listing-card">
+                                <img src="assets/img/Joncherey.jpg" alt="Joncherey, Francia">
+                                <div class="listing-info">
+                                    <h5>Joncherey, Francia</h5>
+                                    <p>Host: azienda specializzata</p>
+                                    <p>06–11 apr</p>
+                                    <strong>336 € notte</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="listing-card">
+                                <img src="assets/img/Fortunago.jpg" alt="Fortunago, Italia">
+                                <div class="listing-info">
+                                    <h5>Fortunago, Italia</h5>
+                                    <p>Host: azienda specializzata</p>
+                                    <p>02–07 feb</p>
+                                    <strong>166 € notte</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="listing-card">
+                                <img src="assets/img/Schinznach.jpg" alt="Schinznach, Svizzera">
+                                <div class="listing-info">
+                                    <h5>Schinznach, Svizzera</h5>
+                                    <p>Host: Andrea</p>
+                                    <p>28 feb – 05 mar</p>
+                                    <strong>179 € notte</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="listing-card">
+                                <img src="assets/img/Goms.jpg" alt="Goms, Svizzera">
+                                <div class="listing-info">
+                                    <h5>Goms, Svizzera</h5>
+                                    <p>Host: Heinz Und Rita</p>
+                                    <p>01–06 feb</p>
+                                    <strong>272 € notte</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        
-                <div class="row listings py-4">
-                    <div class="col">
-                        <div class="listing-card">
-                            <img src="assets/img/Joncherey.jpg" alt="Joncherey, Francia">
-                            <div class="listing-info">
-                                <h5>Joncherey, Francia</h5>
-                                <p>Host: azienda specializzata</p>
-                                <p>06–11 apr</p>
-                                <strong>336 € notte</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="listing-card">
-                            <img src="assets/img/Fortunago.jpg" alt="Fortunago, Italia">
-                            <div class="listing-info">
-                                <h5>Fortunago, Italia</h5>
-                                <p>Host: azienda specializzata</p>
-                                <p>02–07 feb</p>
-                                <strong>166 € notte</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="listing-card">
-                            <img src="assets/img/Schinznach.jpg" alt="Schinznach, Svizzera">
-                            <div class="listing-info">
-                                <h5>Schinznach, Svizzera</h5>
-                                <p>Host: Andrea</p>
-                                <p>28 feb – 05 mar</p>
-                                <strong>179 € notte</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="listing-card">
-                            <img src="assets/img/Goms.jpg" alt="Goms, Svizzera">
-                            <div class="listing-info">
-                                <h5>Goms, Svizzera</h5>
-                                <p>Host: Heinz Und Rita</p>
-                                <p>01–06 feb</p>
-                                <strong>272 € notte</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
             
         </main>
 
@@ -309,7 +346,7 @@
                 </div>
         
                 <div class="footer-pages">
-                    <a href="genova.html">Genova</a> · <a href="listing.html">Tutti gli alloggi</a>
+                    <a href="index.html">Home</a> - <a href="listing.html">Tutti gli alloggi</a> - <a href="genova.html">Genova</a>
                 </div>
         
                 <div class="footer-bottom">
@@ -330,5 +367,21 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <!-- Script per il Menu Mobile -->
         <script src="assets/js/index.js"></script>
+        <!-- SCRIPT -->
+<script>
+    document.getElementById("menuIcon").addEventListener("click", function () {
+        var dropdown = document.getElementById("dropdownMenu");
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    });
+
+    // Chiude il menu se si clicca fuori
+    document.addEventListener("click", function (event) {
+        var menuIcon = document.getElementById("menuIcon");
+        var dropdown = document.getElementById("dropdownMenu");
+        if (!menuIcon.contains(event.target) && !dropdown.contains(event.target)) {
+            dropdown.style.display = "none";
+        }
+    });
+</script>
     </body>
 </html>
