@@ -61,16 +61,17 @@
     <main>      
         <div class="container text-secondary mb-4">
             <div class="mb-4 mt-5">
-                <h2 class="text-dark d-inline ">Blarmor Home</h2>
+                <h2 class="text-dark d-inline">Blarmor Home</h2>
             </div>
-            <div class=" ">
-                <span>4,6 ratings,inverness</span>
+            <div class="row">
+                <span>4,6 ratings, Inverness</span>
             </div>
-            <div class="">
-                <span>share</span>
-                <span>save</span>
+            <div class="d-flex justify-content-end">
+                <span><i class="bi bi-share mx-2"></i> share</span>
+                <span><i class="bi bi-download mx-2"></i> save</span>
             </div>
         </div>
+        
 
         <div class="container mt-4">
             <div class="row">
@@ -100,17 +101,17 @@
 
         <div class="container mt-4">
             <div class="row">
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-8 my-4">
                     <h2 class="h5">House - Host: Erica</h2>
                     <p>3 rooms: Perfect place to visit the Loch Ness and go looking for Nessie.</p>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><strong>House:</strong> You will have the whole premise for you.</li>
-                        <li class="mb-2"><strong>Advanced Cleaning Methods:</strong> The host is committing to our
+                        <li class="mb-4"><strong><i class="bi bi-house mx-2 "></i> House:</strong> You will have the whole premise for you.</li>
+                        <li class="mb-4"><strong><i class="bi bi-stars mx-2"></i>Advanced Cleaning Methods:</strong> The host is committing to our
                             5-step cleaning process.</li>
-                        <li class="mb-2"><strong>Location:</strong> Inverness, 5 Kilmore Rd.</li>
-                        <li class="mb-2"><strong>Cancellation Terms and Fees:</strong> Add your travel dates to know
+                        <li class="mb-4"><strong><i class="bi bi-geo-alt mx-2"></i>Location:</strong> Inverness, 5 Kilmore Rd.</li>
+                        <li class="mb-4"><strong><i class="bi bi-calendar mx-2"></i>Cancellation Terms and Fees:</strong> Add your travel dates to know
                             details about cancellation fees and terms.</li>
-                        <li class="mb-2"><strong>Rules of the House:</strong> It's forbidden to host parties, bring
+                        <li class="mb-4"><strong><i class="bi bi-book mx-2"></i>Rules of the House:</strong> It's forbidden to host parties, bring
                             animals, and smoke.</li>
                     </ul>
                 </div>
@@ -131,7 +132,7 @@
                                 <label for="guests" class="form-label">Guests</label>
                                 <input type="number" id="guests" class="form-control" placeholder="Number of guests">
                             </div>
-                            <button type="button" class="btn btn-danger w-100">Cancel Booking</button>
+                            <button type="button" class="btn btn-danger w-100" onclick="cancelBooking()">Cancel Booking</button>
                         </form>
                     </div>
                 </div>
@@ -168,10 +169,12 @@
                 <div class="col-12 col-md-4">
                     <h3 class="h5">Reviews</h3>
                     <div class="review border rounded p-3 mb-3">
+                        <img src="assets/img/propic.png" class="logo">
                         <p><strong>Noemi - Jan 2021:</strong> Contrary to other reviews, I was cold and couldn't figure
                             out how to turn on the heating. Otherwise, an amazing house.</p>
                     </div>
                     <div class="review border rounded p-3">
+                        <img src="assets/img/propic.png" class="logo">
                         <p><strong>Enrico - Jan 2021:</strong> Amazing place. I've been here with my daughter to take
                             pictures, and we were not disappointed!</p>
                     </div>
@@ -278,5 +281,8 @@
                 }
             });
         </script>
+<!-- Cancella booking -->
+<script src="assets/js/cancel.js"></script>
+
 </body>
 </html>

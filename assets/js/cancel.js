@@ -24,4 +24,3 @@ function cancelBooking() {
     var cancellationURL = `cancellation.html?checkin=${checkin}&checkout=${checkout}&guests=${encodeURIComponent(guests)}`;
     window.location.href = cancellationURL;
 }
-
