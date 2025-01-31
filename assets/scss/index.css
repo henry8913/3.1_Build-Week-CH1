@@ -479,7 +479,7 @@
     box-shadow: none;
     background: white;
     opacity: 0.75;
-    margin-top: 30vh;
+    margin-top: 20vh;
     transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
   .search-container .row {
