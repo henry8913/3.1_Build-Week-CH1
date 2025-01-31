@@ -79,38 +79,46 @@
         </header>   
 
         <main>
+            <!-- SEARCH CONTAINER -->
             <div class="search-container">
                 <div class="row gx-2">
                     <div class="col col-location px-3 py-2 border-end">
                         <label class="text-muted small d-block">Location</label>
                         <div class="d-flex align-items-center">
                             <i class="bi bi-geo-alt icon me-2"></i>
-                            <input type="text" class="bg-transparent" placeholder="Where are you going?">
+                            <input type="text" class="bg-transparent" id="location" placeholder="Where are you going?">
                         </div>
                     </div>
                     <div class="col col-date px-3 py-2 border-end">
                         <label class="text-muted small d-block">Check-in</label>
                         <div class="d-flex align-items-center">
                             <i class="bi bi-calendar icon me-2"></i>
-                            <input type="text" class="bg-transparent" placeholder="gg/mm/aaaa">
+                            <input type="date" class="bg-transparent" id="checkin">
                         </div>
                     </div>
                     <div class="col col-date px-3 py-2 border-end">
                         <label class="text-muted small d-block">Check-out</label>
                         <div class="d-flex align-items-center">
                             <i class="bi bi-calendar icon me-2"></i>
-                            <input type="text" class="bg-transparent" placeholder="gg/mm/aaaa">
+                            <input type="date" class="bg-transparent" id="checkout">
                         </div>
                     </div>
-                    <div class="col col-guests px-3 py-2 border-end">
+                    <div class="col col-guests px-3 py-2 border-end position-relative">
                         <label class="text-muted small d-block">Guests</label>
                         <div class="d-flex align-items-center">
                             <i class="bi bi-person icon ms-2"></i>
-                            <input type="text" class="bg-transparent" placeholder="Add guests">
+                            <input type="text" class="bg-transparent" id="guests" placeholder="Add guests" readonly onclick="toggleGuestDropdown()">
+                        </div>
+                        <div class="guests-dropdown" id="guestsDropdown">
+                            <button onclick="setGuests(1)">1 Guest</button>
+                            <button onclick="setGuests(2)">2 Guests</button>
+                            <button onclick="setGuests(3)">3 Guests</button>
+                            <button onclick="setGuests(4)">4+ Guests</button>
                         </div>
                     </div>
+
                     <div class="col col-btn">
-                        <button class="search-btn"><i class="bi bi-search"></i></button>
+                        <button class="search-btn" onclick="search()"><i class="bi bi-search"></i></button>
                     </div>
                 </div>
             </div>
