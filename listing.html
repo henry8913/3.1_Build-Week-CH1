@@ -100,83 +100,129 @@
         </div>       
 
         <div class="container mt-4">
-            <div class="row">
-                <div class="col-12 col-md-8 my-4">
-                    <h2 class="h5">House - Host: Erica</h2>
-                    <p>3 rooms: Perfect place to visit the Loch Ness and go looking for Nessie.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-4"><strong><i class="bi bi-house mx-2 "></i> House:</strong> You will have the whole premise for you.</li>
-                        <li class="mb-4"><strong><i class="bi bi-stars mx-2"></i>Advanced Cleaning Methods:</strong> The host is committing to our
-                            5-step cleaning process.</li>
-                        <li class="mb-4"><strong><i class="bi bi-geo-alt mx-2"></i>Location:</strong> Inverness, 5 Kilmore Rd.</li>
-                        <li class="mb-4"><strong><i class="bi bi-calendar mx-2"></i>Cancellation Terms and Fees:</strong> Add your travel dates to know
-                            details about cancellation fees and terms.</li>
-                        <li class="mb-4"><strong><i class="bi bi-book mx-2"></i>Rules of the House:</strong> It's forbidden to host parties, bring
-                            animals, and smoke.</li>
-                    </ul>
-                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8 my-4">
+                        <h2 class="h4 fw-bold">House - Host: Erica</h2>
+                        <p class="text-muted">3 rooms · Perfect place to visit the Loch Ness and go looking for Nessie.</p>
+                        <a href="#" class="fw-bold text-dark text-decoration-none">Show host details</a>
+                        <ul class="list-unstyled mt-3">
+                            <li class="d-flex align-items-start mb-3">
+                                <i class="bi bi-house me-3 fs-4"></i>
+                                <div>
+                                    <strong>House</strong>
+                                    <p class="text-muted mb-0">You will have the whole premise for you.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-3">
+                                <i class="bi bi-stars me-3 fs-4"></i>
+                                <div>
+                                    <strong>Advanced Cleaning Methods</strong>
+                                    <p class="text-muted mb-0">The host is committing to our 5-step cleaning process.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-3">
+                                <i class="bi bi-geo-alt me-3 fs-4"></i>
+                                <div>
+                                    <strong>Inverness</strong>
+                                    <p class="text-muted mb-0">5 Kilmore Rd</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-3">
+                                <i class="bi bi-calendar me-3 fs-4"></i>
+                                <div>
+                                    <strong>Cancellation Terms And Fees</strong>
+                                    <p class="text-muted mb-0">Add your travel dates to know details about cancellation fees and terms.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-book me-3 fs-4"></i>
+                                <div>
+                                    <strong>Rules Of The House</strong>
+                                    <p class="text-muted mb-0">It's forbidden to host parties, bring animals and smoke.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                
 
-                <div class="col-12 col-md-4">
-                    <div class="border rounded p-3 shadow">
-                        <h2 class="h6">Add dates to see the prices</h2>
-                        <form>
-                            <div class="mb-3">
-                                <label for="check-in" class="form-label">Check-in</label>
-                                <input type="date" id="check-in" class="form-control">
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="border rounded-4 p-4 shadow-lg bg-white">
+                            <h2 class="h6 mb-3 text-center">Add dates to see the prices</h2>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <i class="bi bi-star-fill text-danger me-1"></i>
+                                <span class="text-muted"> 4.0, 6 reviews</span>
                             </div>
-                            <div class="mb-3">
-                                <label for="check-out" class="form-label">Check-out</label>
-                                <input type="date" id="check-out" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label for="guests" class="form-label">Guests</label>
-                                <input type="number" id="guests" class="form-control" placeholder="Number of guests">
-                            </div>
-                            <button type="button" class="btn btn-danger w-100" onclick="cancelBooking()">Cancel Booking</button>
-                        </form>
+                            <form>
+                                <div class="d-flex gap-3 mb-3">
+                                    <div class="position-relative flex-fill">
+                                        <input type="date" id="check-in" class="form-control border border-secondary-subtle rounded" placeholder="gg/mm/aaaa">
+                                    </div>
+                                    <div class="position-relative flex-fill">
+                                        <input type="date" id="check-out" class="form-control border border-secondary-subtle rounded" placeholder="gg/mm/aaaa">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="number" id="guests" class="form-control border border-secondary-subtle text-center" placeholder="Guests">
+                                </div>
+                                <button type="button" class="btn btn-danger w-100 rounded-3 py-2 fw-bold" onclick="cancelBooking()">Cancel Booking</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
         <div class="container mt-4">
             <div class="row">
                 <div class="col-12 col-md-8">
                     <h3 class="h5">Leave a Review</h3>
                     <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="rating" class="form-label">Rating</label>
-                            <select id="rating" class="form-select">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
+                        <div class="row">
+                            <div class="col-md-8 mb-3 d-flex flex-column">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" class="form-control equal-height" placeholder="Enter Name">
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex flex-column">
+                                <label for="rating" class="form-label">Rating</label>
+                                <select id="rating" class="form-select equal-height">
+                                    <option value="1">⭐</option>
+                                    <option value="2">⭐⭐</option>
+                                    <option value="3">⭐⭐⭐</option>
+                                    <option value="4">⭐⭐⭐⭐</option>
+                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="mb-3">
                             <label for="review" class="form-label">Review</label>
-                            <textarea id="review" rows="3" class="form-control"></textarea>
+                            <textarea id="review" rows="5" class="form-control larger-textarea" placeholder="Type in your review"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary mb-4">Submit Review</button>
                     </form>
                 </div>
 
-                <div class="col-12 col-md-4">
-                    <h3 class="h5">Reviews</h3>
-                    <div class="review border rounded p-3 mb-3">
-                        <img src="assets/img/propic.png" class="logo">
-                        <p><strong>Noemi - Jan 2021:</strong> Contrary to other reviews, I was cold and couldn't figure
-                            out how to turn on the heating. Otherwise, an amazing house.</p>
-                    </div>
-                    <div class="review border rounded p-3">
-                        <img src="assets/img/propic.png" class="logo">
-                        <p><strong>Enrico - Jan 2021:</strong> Amazing place. I've been here with my daughter to take
-                            pictures, and we were not disappointed!</p>
+                <div class="row">
+                    <div class="col-12 my-4">
+                        <h3 class="h5 fw-bold">Reviews</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="review d-flex align-items-start border rounded p-3 mb-3 w-100">
+                                    <img src="assets/img/propic.png" class="review-avatar me-3">
+                                    <div>
+                                        <strong>Noemi</strong>
+                                        <p class="text-muted small">Jan 2021</p>
+                                        <p class="mb-0">Contrary to other reviews, I was cold and couldn't figure out how to turn on the heating... Otherwise, amazing house.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="review d-flex align-items-start border rounded p-3 mb-3 w-100">
+                                    <img src="assets/img/propic.png" class="review-avatar me-3">
+                                    <div>
+                                        <strong>Enrico</strong>
+                                        <p class="text-muted small">Jan 2021</p>
+                                        <p class="mb-0">Amazing place. I've been here with my daughter to take pictures and we were not disappointed!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
