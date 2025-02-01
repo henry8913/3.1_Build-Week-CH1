@@ -56,10 +56,13 @@
   width: 100%;
 }
 .search-container input {
-  border: none;
   outline: none;
   width: 100%;
   font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
 }
 .search-container .search-btn {
   background-color: #ff385c;
@@ -482,7 +485,7 @@
     border-radius: 20px;
     box-shadow: none;
     background: white;
-    margin-top: 20vh;
+    margin-top: 22vh;
   }
   .search-container .row {
     flex-direction: column;
@@ -514,7 +517,7 @@
   .hero-content {
     margin: 0 auto;
     align-self: flex-end;
-    margin-bottom: 75vh;
+    margin-bottom: 72vh;
     text-align: center;
   }
   .hero-content h1 {
