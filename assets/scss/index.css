@@ -751,5 +751,96 @@
     padding-bottom: 5px;
   }
 }
+.popular-destinations .card, .unique-experiences .card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.popular-destinations .card:hover, .unique-experiences .card:hover {
+  transform: translateY(-5px);
+}
+.popular-destinations .card .card-img-top, .unique-experiences .card .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.popular-destinations .card .card-body, .unique-experiences .card .card-body {
+  padding: 1rem;
+}
+.popular-destinations .card .card-title, .unique-experiences .card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.popular-destinations .card .card-text, .unique-experiences .card .card-text {
+  color: gray;
+}
+
+.user-reviews .review {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.user-reviews .review .review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.user-reviews .review strong {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.user-reviews .review .text-muted {
+  font-size: 0.9rem;
+}
+
+.cta-section {
+  background: #ff385c;
+}
+.cta-section .btn-light {
+  background: white;
+  color: #ff385c;
+  font-weight: bold;
+}
+.cta-section .btn-light:hover {
+  background: rgb(229.5, 229.5, 229.5);
+}
+.cta-section .btn-outline-light {
+  border-color: white;
+  color: white;
+  font-weight: bold;
+}
+.cta-section .btn-outline-light:hover {
+  background: white;
+  color: #ff385c;
+}
+
+@media (max-width: 728px) {
+  .card-img-top {
+    height: 150px;
+  }
+  .popular-destinations .row, .unique-experiences .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .popular-destinations .col, .unique-experiences .col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .user-reviews .review {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .user-reviews .review .review-avatar {
+    margin-bottom: 10px;
+  }
+  .cta-section .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
