@@ -56,14 +56,10 @@
   width: 100%;
 }
 .search-container input {
+  border: none;
   outline: none;
   width: 100%;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 8px;
-  height: 2.5rem;
-  background-color: transparent;
 }
 .search-container .search-btn {
   background-color: #ff385c;
@@ -505,6 +501,21 @@
     width: 100%;
     border-radius: 10px;
     padding: 12px;
+  }
+  .search-container input {
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    height: 2.5rem;
+    background-color: transparent;
+  }
+  .search-container input::placeholder {
+    color: #888;
+    opacity: 1;
+    font-size: 1rem;
   }
   .hero {
     height: 100vh;
