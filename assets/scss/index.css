@@ -524,7 +524,7 @@
     text-align: center;
     padding: 20px;
     object-fit: cover;
-    background-color: black;
+    background: url("../img/genova-intro.jpg") no-repeat center center/cover;
   }
   .hero-content {
     margin: 0 auto;
@@ -540,80 +540,78 @@
     font-size: 1rem;
     padding: 12px 16px;
   }
+  /* ========== NEARBY DESTINATIONS ========== */
   .nearby-destinations {
-    padding: 2rem 15px;
+    padding: 60px 0;
   }
-  .nearby-destinations .row {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .nearby-destinations .destination-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
   }
-  .nearby-destinations .row .col {
-    display: flex;
-    align-items: flex-start;
-    padding: 15px;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-  }
-  .nearby-destinations .row .col .destination-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    margin-right: 15px;
-    flex-shrink: 0;
-  }
-  .nearby-destinations .row .col > div {
-    flex-grow: 1;
-  }
-  .nearby-destinations .row .col h5 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: black;
-  }
-  .nearby-destinations .row .col .location {
-    font-size: 0.9rem;
-    color: gray;
-    margin-bottom: 6px;
-  }
-  .nearby-destinations .row .col .details {
-    font-size: 0.85rem;
-    color: gray;
-    margin-bottom: 8px;
-  }
-  .nearby-destinations .row .col .details span {
-    display: block;
-    margin-bottom: 4px;
-  }
-  .nearby-destinations .row .col .price {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #ff385c;
-    margin: 10px 0;
-  }
-  .nearby-destinations .row .col .rating {
+  .nearby-destinations .col {
     display: flex;
     align-items: center;
-    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
   }
-  .nearby-destinations .row .col .rating .stars {
-    color: #ffd700;
+  .nearby-destinations .col:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .nearby-destinations .col:hover .destination-img {
+    transform: scale(1.1);
+  }
+  .nearby-destinations h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .nearby-destinations p {
     font-size: 0.9rem;
+    color: #666;
   }
-  .nearby-destinations .row .col .rating .reviews {
-    color: gray;
-    font-size: 0.8rem;
+  .nearby-destinations {
+    padding: 0px 0;
   }
-  .nearby-destinations .row .col .badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: #ff385c;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.7rem;
+  .nearby-destinations .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nearby-destinations .col {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: background 0.3s ease-in-out;
+  }
+  .nearby-destinations .col:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .nearby-destinations .col:hover .destination-img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  .nearby-destinations .destination-img {
+    width: 40vh;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .nearby-destinations h5 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .nearby-destinations p {
+    font-size: 1rem;
+    color: #666;
   }
   .footer-bottom {
     display: flex;
@@ -840,6 +838,140 @@
   .cta-section .btn {
     width: 100%;
     margin-bottom: 10px;
+  }
+}
+.top-rated-listings .card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.top-rated-listings .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.top-rated-listings .card .card-body {
+  text-align: center;
+  padding: 15px;
+}
+.top-rated-listings .card .card-body h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.top-rated-listings .card:hover {
+  transform: translateY(-5px);
+}
+
+.why-choose-us {
+  text-align: center;
+}
+.why-choose-us .why-icon {
+  font-size: 3rem;
+  color: #ff385c;
+  margin-bottom: 15px;
+}
+.why-choose-us h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.why-choose-us p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.explore-categories .category-card {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.explore-categories .category-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.explore-categories .category-card h5 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.explore-categories .category-card:hover {
+  transform: scale(1.05);
+}
+
+.trending-stays .trending-card {
+  text-align: center;
+}
+.trending-stays .trending-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.trending-stays .trending-card h5 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.trending-stays .trending-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.special-offers .offer-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.special-offers .offer-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.special-offers .offer-card .offer-details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.special-offers .offer-card .offer-details h5 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+.special-offers .offer-card .offer-details p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.special-offers .offer-card .offer-details .btn {
+  font-size: 1rem;
+  padding: 8px 15px;
+  background: #ff385c;
+  border: none;
+  transition: background 0.3s ease-in-out;
+}
+.special-offers .offer-card .offer-details .btn:hover {
+  background: #e61e4d;
+}
+
+@media (max-width: 768px) {
+  .top-rated-listings .card img,
+  .special-offers .offer-card img,
+  .guest-reviews .review-card {
+    height: auto;
+  }
+  .special-offers .offer-details {
+    padding: 15px;
   }
 }
 
