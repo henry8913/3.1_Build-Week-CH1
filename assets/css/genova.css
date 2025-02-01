@@ -11,8 +11,13 @@
 }
 
 .card-body {
-    padding: 0;
+    padding: 0.5rem;
     text-align: center;
+}
+
+.card-body span, .card-body p {
+    margin-top: 0.5rem;
+    display: block;
 }
 
 .plus {
@@ -27,6 +32,8 @@
 .card p:first-of-type {
     color: black;
 }
+
+
 
 /* Layout per diverse risoluzioni */
 @media (max-width: 728px) {
