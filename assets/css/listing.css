@@ -106,8 +106,7 @@ header {
     font-weight: 500;
 }
 
-.globe-icon i,
-.menu-container i {
+.globe-icon i, .menu-container i {
     font-size: 20px;
     color: black !important;
 }
@@ -154,23 +153,29 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
 }
+
 .shadow-lg {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
 }
+
 .rounded-4 {
     border-radius: 16px;
 }
+
 .btn-danger {
     background-color: #ff385c;
     border: none;
 }
+
 .btn-danger:hover {
     background-color: #e61e4d;
 }
+
 .position-relative .bi-calendar {
     font-size: 1.2rem;
     color: #6c757d;
 }
+
 .d-flex.gap-2 {
     gap: 8px !important;
 }
@@ -181,12 +186,15 @@ body {
 .fw-bold {
     font-weight: 700 !important;
 }
+
 .fs-4 {
     font-size: 1.25rem !important;
 }
+
 .me-3 {
     margin-right: 1rem !important;
 }
+
 .mb-3 {
     margin-bottom: 1rem !important;
 }
@@ -200,18 +208,23 @@ body {
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .text-muted {
     color: #6c757d !important;
 }
+
 .fw-bold {
     font-weight: 700 !important;
 }
+
 .me-3 {
     margin-right: 1rem !important;
 }
+
 .small {
     font-size: 0.875rem !important;
 }
+
 @media (max-width: 728px) {
     .col-md-6 {
         flex: 0 0 100%;
@@ -222,6 +235,7 @@ body {
 .container .row {
     align-items: flex-start;
 }
+
 .border.rounded-4.p-4.shadow-lg.bg-white {
     flex-grow: 0;
 }
@@ -231,12 +245,164 @@ body {
     border-radius: 5px;
     padding: 10px;
 }
+
 .form-select {
     text-align: center;
 }
+
 .equal-height {
     height: 48px;
 }
+
 .larger-textarea {
     height: 120px;
 }
+
+/* ========== 1. EXPLORE BY CATEGORY ========== */
+.explore-categories .category-card {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.explore-categories .category-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.explore-categories .category-card h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.explore-categories .category-card:hover {
+    transform: scale(1.05);
+}
+
+/* ========== 2. TOP RATED LISTINGS ========== */
+.top-rated .card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-rated .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.top-rated .card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.top-rated .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.top-rated .card:hover {
+    transform: translateY(-5px);
+}
+
+/* ========== 3. SPECIAL OFFERS ========== */
+.special-offers .offer-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.special-offers .offer-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.special-offers .offer-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.special-offers .offer-details h5 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.special-offers .offer-details p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.special-offers .btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+    background: #ff385c;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.special-offers .btn:hover {
+    background: #e61e4d;
+}
+
+/* ========== 4. INTERACTIVE MAP ========== */
+.interactive-map .map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== 5. GUEST REVIEWS CAROUSEL ========== */
+.guest-reviews .review-card {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.guest-reviews .review-card p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+}
+
+.guest-reviews .review-card h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+}
+
+/* ========== GENERAL RESPONSIVE ADJUSTMENTS ========== */
+@media (max-width: 768px) {
+    .top-rated .card img,
+    .special-offers .offer-card img,
+    .guest-reviews .review-card {
+        height: auto;
+    }
+
+    .special-offers .offer-details {
+        padding: 15px;
+    }
+}
+
